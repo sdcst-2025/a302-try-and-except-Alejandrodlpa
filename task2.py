@@ -5,7 +5,7 @@
 # reciprocal of each number as a decimal and print it.
 # use the try/except to find any invalid values and display
 # the error message
-
+# The reciprocal is 1/x when x= the number they inputed
 #sample output:
 """
 Enter a number: 0
@@ -19,3 +19,12 @@ The reciprocal of 3 is 0.3333333333333333
 Enter a number: 4
 The reciprocal of 4 is 0.25
 """
+import math
+x=float(input("Enter a number: "))
+try:
+    y=x**(-1)
+   
+except ZeroDivisionError:
+    print("The reciprocal of 0 does not exist, try another number")
+else:
+    print(f"The reciprocal of {x} is {y}")
