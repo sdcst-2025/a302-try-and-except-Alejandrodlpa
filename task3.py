@@ -23,12 +23,12 @@ import math
 try:
     x=input("Enter a number: ")
     x=float(x)
-except:
-     print("That is not a number")
-else:
     try:
       math.sqrt(x)
     except:
       print("There is no squere root")
     else:
       print(f"the squere root of {x} is {math.sqrt(x)}") 
+except:
+   print("That is not a number")
+

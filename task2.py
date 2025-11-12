@@ -20,11 +20,20 @@ Enter a number: 4
 The reciprocal of 4 is 0.25
 """
 import math
-x=float(input("Enter a number: "))
+
 try:
-    y=x**(-1)
+    x=float(input("Enter a number: "))
+    try:
+        y=x**(-1)
    
-except ZeroDivisionError:
-    print("The reciprocal of 0 does not exist, try another number")
-else:
-    print(f"The reciprocal of {x} is {y}")
+    except ZeroDivisionError:
+        print("The reciprocal of 0 does not exist, try another number")
+    else:
+        print(f"The reciprocal of {x} is {y}")
+
+
+
+except:
+    print("That is not a number")
+
+
